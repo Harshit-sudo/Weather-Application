@@ -6,14 +6,14 @@ const forecast = require('../forecast/forecasts.js')
 const app = express()
 console.log(__dirname)
 console.log(__filename)
-//
+
 const pathDirectoryName = path.join(__dirname, '../src')
 const templatePath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
 
 hbs.registerPartials(partialsPath)
 
-// folder we wanna serve up staticDirectory to serve
+
 app.use(express.static(pathDirectoryName))
 
 // setup handlebars engine and views location
