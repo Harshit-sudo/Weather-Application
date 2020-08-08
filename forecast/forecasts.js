@@ -2,7 +2,7 @@ const axios = require('axios')
 // 
 const forecast = (city = "Lucknow", callback) => {
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?q='+ city +'&appid=cf0593eb0fa1722fba383d2b234f883a&units=metric'
+const url = 'https://api.openweathermap.org/data/2.5/weather?q='+ city +'&appid=cf0593eb0fa2425fba567d2b546f883a&units=metric'
 
 axios.get(url)
 .then((response) => {
